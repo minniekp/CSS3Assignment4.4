@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>ANIMATIONS</title>
+</head>
+    <style type="text/css">
+    
+    img {
+    	width: 200px;
+        height: 200px;
+        position: relative;
+        
+ 
+        /* Chrome */
+        -webkit-animation-name: example;
+        -webkit-animation-duration: 5s;
+        -webkit-animation-timing-function: linear;
+        -webkit-animation-delay: 3s;
+        -webkit-animation-iteration-count: 2;
+        -webkit-animation-direction: alternate;
+        -webkit-animation-fill-mode: forwards;
+
+        animation-name: example;
+        animation-duration: 5s;
+        animation-timing-function: linear;
+        animation-delay: 3s;
+        animation-iteration-count: infinite;
+        animation-direction: alternate;
+        animation-fill-mode: forwards;
+    }
+
+    /* Standard syntax */
+    @keyframes example {
+    0%   {left:0px; top:0px;}
+    25%  {left:500px; top:0px;}
+    50%  {left:500px; top:500px;}
+    75%  {left:0px; top:500px;}
+    100% {left:0px; top:0px;}
+}
+
+    </style>
+
+<body>
+
+ <div class="gallery">
+ 	<img src="https://assets.academy.com/mgen/39/10446939.jpg" alt="bicycle">
+ </div>
+
+</body>
+</html>
